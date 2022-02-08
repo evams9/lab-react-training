@@ -1,24 +1,19 @@
+function BoxColor({ r, g, b }) {
+  const divStyle = {
+    padding: '30px',
+    color: 'black',
+    background: `rgb(${r}, ${g}, ${b})`,
+  };
 
-function BoxColor() {
+  return (
+    <div className="colors">
+      <nav>
+        <div style={divStyle}>
+          rgb({r},{g},{b})
+        </div>
+      </nav>
+    </div>
+  );
+}
 
-    const divStyle = {
-        color: 'red',
-    }
-
-
-    return (
-       <div className="colors">
-           
-           
-         <nav>
-        
-         <div style={divStyle}>{BoxColor}</div> 
-         
-         </nav>
-       
-       </div>
-     )
-   }
-
-
-   export default BoxColor;
+export default BoxColor;
