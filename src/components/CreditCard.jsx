@@ -35,7 +35,7 @@ function CreditCard({
   return (
     <div className="creditCard" style={divStyle}>
       <section>
-        <img src={cardType} alt="visa" />
+        <img src={cardType} alt="visa" id="visa"/>
         <span>{hashedNumber.join(' ')}</span>
         <ul>
           {expirationMonth} {expirationYear} {bank}

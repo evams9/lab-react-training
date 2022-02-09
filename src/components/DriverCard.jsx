@@ -4,11 +4,11 @@ function DriverCard({ name, rating, img, car }) {
   return (
     <div className="drivercard">
       <section>
-        <img src={img} alt="avatar" />
+        <img src={img} alt="avatar" id="circle"/>
       </section>
 
-      <section>
-        <h6>{name}</h6>
+      <section id="carnetData">
+        <h3>{name}</h3>
         <Rating>{rating}</Rating>
         <p>
           {car.model} - {car.licensePlate}

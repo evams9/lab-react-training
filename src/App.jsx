@@ -4,7 +4,7 @@ import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
-// import CreditCard from './components/CreditCard';
+import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 
@@ -55,7 +55,7 @@ function App() {
       <div className="App">
         <h1>Credit Card:</h1>
 
-        {/* <CreditCard
+        <CreditCard
           type="Visa"
           number="0123456789018845"
           expirationMonth={3}
@@ -86,7 +86,7 @@ function App() {
           owner="Firstname Lastname"
           bgColor="#ddbb55"
           color="white"
-        /> */}
+        />
       </div>
 
       <div className="App">
@@ -105,7 +105,7 @@ function App() {
 
         <DriverCard
           name="Travis Kalanick"
-          rating={4.2}
+          rating={4}
           img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
           car={{
             model: 'Toyota Corolla Altis',
